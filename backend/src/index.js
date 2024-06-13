@@ -16,7 +16,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // Your frontend URL
+  origin: 'https://bookstore-va.vercel.app/', // Your frontend URL
   credentials: true, // Enable credentials (cookies)
 };
 

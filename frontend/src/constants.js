@@ -1,4 +1,4 @@
-const backendUrl = 'http://localhost:8000/api';
+const backendUrl = 'https://bookstore-backend-va.vercel.app/api';
 const backendImageUrl = 'http://localhost:8000/images'
 
 const firebaseUrl = (imgName)=>{
