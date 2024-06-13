@@ -13,6 +13,19 @@ export default function CustomerLogin() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [error, setError] = useState(null);
+    const userData = useSelector((state) => state.user.user);
+
+    useEffect(() => {
+        if (userData) {
+            navigate('/home');
+        }
+        else {
+            setTimeout(() => {
+                alert("For testing you can use 'user@gmail.com' & pswd:'user'");
+            }, 100);
+        }
+    }, [])
+
 
     async function handleLogin(e) {
         e.preventDefault();
